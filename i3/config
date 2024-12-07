@@ -193,30 +193,18 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 #
 #
 # NOTE: working neovim
-bindsym $mod+n exec xdotool windowactivate 0x01600003x01e00003
+bindsym $mod+n exec xdotool windowactivate 0x018006d0
 # NOTE: searching
-bindsym $mod+q exec xdotool windowactivate 0x01a00003
+bindsym $mod+q exec xdotool windowactivate 0x02800019
 # NOTE: live server
-bindsym $mod+z exec xdotool windowactivate 0x01600034
+bindsym $mod+z exec xdotool windowactivate 0x01800003
 # NOTE: working terminal
-bindsym $mod+t exec xdotool windowactivate 0x01600042
-#NOTE: study & help
-bindsym $mod+x exec xdotool windowactivate 0x01600026
-#NOTE: note taking
-bindsym $mod+i exec xdotool windowactivate 0x02a00002
-
+bindsym $mod+t exec xdotool windowactivate 0x01800003
 
 
 # Automatically launch terminals and applications
 exec terminator -e "cd ~/Desktop/WorkSpace/ && zsh"
-exec terminator -e "cd ~/Desktop/study/ && zsh"
-exec terminator -e "cd ~/Desktop/WorkSpace/ && zsh"
-exec terminator -e "cd ~/Desktop/WorkSpace/ && zsh && WorkSpace"
 exec google-chrome
-
-# Set layout for terminals
-exec --no-startup-id i3-msg 'workspace $ws1; layout tabbed'
-
 
 
 # resize window (you can also use the mouse for that)
